@@ -8,7 +8,7 @@ describe('The main view', function () {
 
   it('list more than 5 awesome things', function () {
     element.all(by.repeater('awesomeThing in awesomeThings')).count().then(function(count) {
-      expect(count > 5).toBeTruthy();
+      expect(count > 8).toBeTruthy();
     });
   });
 
