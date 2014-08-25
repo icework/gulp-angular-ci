@@ -4,6 +4,7 @@ node_js:
 before_install:
   - 'npm install npm -g'
   - 'npm install gulp -g'
+  - 'npm install bower -g'
 install:
   - 'npm install'
   - 'bower update'
