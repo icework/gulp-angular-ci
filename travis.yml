@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - 'npm install npm -g'
+  - 'npm install gulp -g'
+install:
+  - 'npm install'
+  - 'bower update'
+script:
+  - 'gulp test'
+  - 'gulp protractor'
+notifications:
+  slack: smartorg:nle3gU183MeaEZkcv37psNDQ
